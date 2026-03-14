@@ -1,0 +1,2 @@
+# New file created for merge test
+This file demonstrates a simple merge scenario.
