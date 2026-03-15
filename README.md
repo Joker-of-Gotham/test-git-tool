@@ -1,24 +1,17 @@
 # Project Title
 
-A short description of what this project does and who it is for.
+## Purpose
+This repository demonstrates a basic web project with CI/CD and GitHub configuration.
 
 ## Setup
-
 ```bash
-# Clone the repository
+# Clone the repo
 git clone https://github.com/Joker-of-Gotham/test-git-tool.git
 cd test-git-tool
-# Install dependencies (if any)
-npm install
 ```
 
 ## Usage
-
-```bash
-# Run the demo
-node index.html
-```
+Open `index.html` in a browser or serve it with a simple HTTP server.
 
 ## Contributing
-
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.

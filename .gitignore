@@ -1,28 +1,19 @@
-# macOS
+# Node.js
+delete node_modules/
+
+# OS files
 .DS_Store
 
-# Node.js
-node_modules/
-npm-debug.log
-
-# IDEs and editors
-.vscode/
+# IDEs
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+*.sublime-workspace
+*.sublime-project
 
 # Logs
 *.log
 
+# Coverage
+coverage/
+
 # Compiled files
 *.class
-*.pyc
-*.exe
-
-# GitDex internal state
-.gitdex/
-
-# Other
-.env
