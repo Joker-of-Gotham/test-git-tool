@@ -1,8 +1,28 @@
-# 生成的默认忽略文件
-*.exe
+# macOS
+.DS_Store
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Logs
 *.log
-gitmanual.exe
-# Gitdex temporary files
+
+# Compiled files
+*.class
+*.pyc
+*.exe
+
+# GitDex internal state
 .gitdex/
 
-# Other existing rules...
+# Other
+.env
