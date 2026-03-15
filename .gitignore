@@ -1,19 +1,18 @@
-# Node.js
-delete node_modules/
+# Node modules
+node_modules/
 
 # OS files
 .DS_Store
+Thumbs.db
 
-# IDEs
-.idea/
-*.sublime-workspace
-*.sublime-project
+# IDE files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
 # Logs
 *.log
 
-# Coverage
-coverage/
-
-# Compiled files
-*.class
+# Misc
+.gitdex/
