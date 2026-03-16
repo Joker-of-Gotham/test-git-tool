@@ -53,8 +53,8 @@ entries:
       title: bitbucket_admin_surface
       short_description: Bitbucket 管理操作分层：变量/密钥/Webhook/分支限制/部署环境
       tags:
-        - goal_contains
         - platform
+        - goal_contains
       domain: bitbucket
       trust_level: builtin
     - knowledge_id: platform_github#github_admin_overview
@@ -70,8 +70,8 @@ entries:
       title: github_release_surface
       short_description: GitHub Release 操作：inspect 当前发布 → mutate 创建/更新 → 验证 asset
       tags:
-        - platform
         - goal_contains
+        - platform
       domain: github
       trust_level: builtin
     - knowledge_id: platform_github#github_pr_review_flow
@@ -106,8 +106,8 @@ entries:
       title: github_packages_notifications
       short_description: GitHub Packages 版本管理与通知订阅（watch/thread/inbox）
       tags:
-        - platform
         - goal_contains
+        - platform
       domain: github
       trust_level: builtin
     - knowledge_id: recovery#recovery_triage
@@ -155,8 +155,8 @@ entries:
       title: diverged_integration
       short_description: 分支分叉（ahead+behind 同时 >0）时的 merge/rebase 整合策略
       tags:
-        - behind_gt
         - ahead_gt
+        - behind_gt
       domain: git
       trust_level: builtin
     - knowledge_id: sync#first_push

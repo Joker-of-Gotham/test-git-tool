@@ -1,21 +1,16 @@
 # Contributing
 
-Thank you for your interest in contributing!
-
-## How to Contribute
-
-1. Fork the repository and create a feature branch.
-2. Write tests and add documentation as needed.
-3. Run the CI locally with `npm test` (if applicable).
-4. Submit a pull request.
+Thank you for your interest in contributing to this project!
 
 ## Code Style
+We use [Prettier](https://prettier.io/) and [ESLint](https://eslint.org/) to keep the code consistent.
 
-- JavaScript: Use 2 spaces indentation.
-- Commit messages should follow Conventional Commits.
+## Pull Request Process
+1. Fork the repository.
+2. Create a new branch from `master`.
+3. Make your changes and run tests.
+4. Submit a pull request against `master`.
+5. Wait for CI to pass and for a reviewer to approve.
 
-## Pull Request Workflow
-
-- Please keep PRs small and focused.
-- All tests must pass.
-- PRs require at least one approval and CI passing status.
+## Testing
+If the project includes tests, run them with `npm test` before submitting.

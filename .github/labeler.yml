@@ -1,23 +1,12 @@
-# Labeler configuration for automated labeling based on file paths or PR titles
-
-labeler:
-  - label: bug
-    files:
-      - '*/*.js'
-      - '*/*.ts'
-      - '*/*.go'
-  - label: enhancement
-    files:
-      - '*/*.md'
-  - label: documentation
-    files:
-      - '*.md'
-  - label: question
-    titles:
-      - 'Question:'
-  - label: help-wanted
-    titles:
-      - 'Help Wanted:'
-  - label: good-first-issue
-    titles:
-      - 'Good First Issue:'
+bug:
+  - '*.md'
+enhancement:
+  - '*.js'
+documentation:
+  - '**/*.md'
+question:
+  - '**/*.txt'
+help-wanted:
+  - 'README.md'
+good-first-issue:
+  - 'README.md'
