@@ -1,2 +1,6 @@
-# .github/labeler.yml
-# This file configures labeler rules
+- name: "bug"
+  files:
+    - "*.js"
+- title: "Bug: *"
+  labels:
+    - bug
