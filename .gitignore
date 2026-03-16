@@ -19,3 +19,6 @@ build/
 
 # Env
 .env
+
+# Gitdex state directory
+.gitdex/
