@@ -1,12 +1,2 @@
-bug:
-  - '*.md'
-enhancement:
-  - '*.js'
-documentation:
-  - '**/*.md'
-question:
-  - '**/*.txt'
-help-wanted:
-  - 'README.md'
-good-first-issue:
-  - 'README.md'
+# .github/labeler.yml
+# This file configures labeler rules
