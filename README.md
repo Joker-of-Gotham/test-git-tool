@@ -1,29 +1,26 @@
-# Project Name
+# test-git-tool
 
-This repository demonstrates a fully automated GitHub workflow setup, including CI/CD, issue templates, code style enforcement, and deployment to GitHub Pages.
+This repository demonstrates a simple Git project with GitHub integration, including CI/CD, Pages deployment, and issue management.
 
-## Setup
+## Quick Start
 
-Clone the repository:
 ```bash
+# Clone the repository
 git clone https://github.com/Joker-of-Gotham/test-git-tool.git
-```
+cd test-git-tool
 
-Install dependencies (if any):
-```bash
-# Example: npm install
+# Install dependencies (if any)
+# npm install
 ```
 
 ## Usage
 
-- CI runs on every push and pull request.
-- GitHub Pages publishes the `index.html` file from the `master` branch.
-- Use the provided issue templates for bug reports and feature requests.
+Currently the project contains a static `index.html` for demonstration. Open it locally or view it on GitHub Pages.
 
 ## Contributing
 
-Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for coding standards, pull request workflow, and testing expectations.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

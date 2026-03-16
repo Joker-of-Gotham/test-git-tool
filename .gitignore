@@ -1,4 +1,21 @@
+# Node
 node_modules/
-.DS_Store
-.vscode/
+npm-debug.log
+yarn-error.log
+
+# Build
+dist/
+build/
+
+# Logs
 *.log
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Env
+.env

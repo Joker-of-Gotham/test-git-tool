@@ -1,3 +1,5 @@
-/README.md @owner
-/index.html @owner
-*.js @owner
+# This file declares the owners of the repository
+# For a more detailed explanation, see https://docs.github.com/en/repos/managing-your-repositorys-branches/about-code-owners
+
+README.md
+index.html

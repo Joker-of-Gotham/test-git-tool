@@ -1,8 +1,5 @@
 # Security Policy
 
-If you discover a security vulnerability, please do not open a public issue. Submit a private report through the following:
+If you discover a security vulnerability in this project, please open a private issue or contact the maintainer at 1211095767@qq.com. All reported issues will be handled promptly.
 
-- Email: security@example.com
-- GitHub Security Advisory: https://github.com/Joker-of-Gotham/test-git-tool/security/advisories/new
-
-We will investigate and respond promptly.
+Please do not disclose vulnerabilities publicly until they have been patched.
