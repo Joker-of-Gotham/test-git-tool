@@ -1,9 +1,11 @@
----
-name: Feature Request
-about: Suggest a new feature
-title: "[Feature] "
-labels: ["enhancement"]
-assignees: []
----
+# Feature Request
 
-Please describe your feature request in detail, including motivation and potential implementation ideas.
+**Describe the feature**
+
+- Why is this needed?
+- How would it improve the project?
+
+**Implementation**
+
+- Proposed approach:
+- Possible challenges:

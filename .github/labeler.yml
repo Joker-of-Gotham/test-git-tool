@@ -1,6 +1,3 @@
-- name: "bug"
-  files:
-    - "*.js"
-- title: "Bug: *"
-  labels:
-    - bug
+labeler:
+  - pattern: "**/*.js"
+    labels: ["javascript"]

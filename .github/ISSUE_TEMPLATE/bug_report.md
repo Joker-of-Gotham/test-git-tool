@@ -1,30 +1,13 @@
----
-name: Bug Report
-about: Create a report to help us improve
-title: ""
-labels: bug
-assignees: []
----
+# Bug Report
 
-## Describe the bug
-A clear and concise description of the bug.
+**Describe the bug**
 
-## Expected behavior
-A clear and concise description of what you expected to happen.
+- Steps to reproduce:
+- Expected behavior:
+- Actual behavior:
 
-## Actual behavior
-A clear and concise description of what actually happened.
+**Environment**
 
-## Steps to reproduce
-1. Go to '...'
-2. Click on '...'
-3. Scroll down to '...'
-4. See error.
-
-## Environment
-- OS: ...
-- Browser: ...
-- Version: ...
-
-## Additional context
-Add any other context about the problem here.
+- Browser:
+- Version:
+- Platform:
