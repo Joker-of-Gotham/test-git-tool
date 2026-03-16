@@ -1,26 +1,20 @@
 # Project Title
 
-A short description of what this project does and who it is for.
+A brief description of what this project does and why it matters.
 
 ## Setup
 
 ```bash
-# Clone the repo
-git clone https://github.com/Joker-of-Gotham/test-git-tool.git
+# Clone the repository
+git clone git@github.com:Joker-of-Gotham/test-git-tool.git
 cd test-git-tool
+# (If you add a Node.js setup later, add instructions here.)
 ```
 
 ## Usage
 
-```bash
-# Run the demo (replace with real commands)
-node hello.js
-```
+Describe how to run the project or use its functionality.
 
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

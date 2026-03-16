@@ -1,0 +1,180 @@
+entries:
+    - knowledge_id: cleanup#branch_cleanup
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\cleanup.yaml
+      title: branch_cleanup
+      short_description: 分支清理流程：列出已合并分支 → 安全删除 → fetch --prune 同步远程
+      tags:
+        - branch_count_gt
+      domain: git
+      trust_level: builtin
+    - knowledge_id: cleanup#interactive_rebase_cleanup
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\cleanup.yaml
+      title: interactive_rebase_cleanup
+      short_description: 交互式 rebase 历史整理（pick/squash/fixup/reword/drop）
+      tags:
+        - commit_count_gt
+      domain: git
+      trust_level: builtin
+    - knowledge_id: cleanup#branch_naming
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\cleanup.yaml
+      title: branch_naming
+      short_description: 分支命名规范：feature/fix/hotfix/release/chore 前缀模式
+      tags:
+        - always
+      domain: git
+      trust_level: builtin
+    - knowledge_id: inspect#daily_check
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\inspect.yaml
+      title: daily_check
+      short_description: 日常 Git 检查流程：status → diff → diff --staged → log --graph
+      tags:
+        - always
+      domain: git
+      trust_level: builtin
+    - knowledge_id: inspect#detached_head
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\inspect.yaml
+      title: detached_head
+      short_description: Detached HEAD 恢复：检查未提交改动 → switch 回分支或 switch -c 保存
+      tags:
+        - detached_head
+      domain: git
+      trust_level: builtin
+    - knowledge_id: platform_bitbucket#bitbucket_pr_pipeline_flow
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\platform_bitbucket.yaml
+      title: bitbucket_pr_pipeline_flow
+      short_description: Bitbucket PR/Pipeline 工作流：分支同步 → pipelines.yml 检查 → PR 创建/审查
+      tags:
+        - platform
+        - goal_contains
+      domain: bitbucket
+      trust_level: builtin
+    - knowledge_id: platform_bitbucket#bitbucket_admin_surface
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\platform_bitbucket.yaml
+      title: bitbucket_admin_surface
+      short_description: Bitbucket 管理操作分层：变量/密钥/Webhook/分支限制/部署环境
+      tags:
+        - platform
+        - goal_contains
+      domain: bitbucket
+      trust_level: builtin
+    - knowledge_id: platform_github#github_admin_overview
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\platform_github.yaml
+      title: github_admin_overview
+      short_description: GitHub 仓库管理分层总览：Release/PR/Rulesets/Actions/Webhooks/Security
+      tags:
+        - platform
+      domain: github
+      trust_level: builtin
+    - knowledge_id: platform_github#github_release_surface
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\platform_github.yaml
+      title: github_release_surface
+      short_description: GitHub Release 操作：inspect 当前发布 → mutate 创建/更新 → 验证 asset
+      tags:
+        - platform
+        - goal_contains
+      domain: github
+      trust_level: builtin
+    - knowledge_id: platform_github#github_pr_review_flow
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\platform_github.yaml
+      title: github_pr_review_flow
+      short_description: GitHub PR 审查流程：inspect PR → 检查 CI/rulesets → approve/request_changes
+      tags:
+        - platform
+        - goal_contains
+      domain: github
+      trust_level: builtin
+    - knowledge_id: platform_github#github_pages_surface
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\platform_github.yaml
+      title: github_pages_surface
+      short_description: GitHub Pages 配置与调试：inspect 配置/构建历史 → 修改 source/cname
+      tags:
+        - platform
+        - goal_contains
+      domain: github
+      trust_level: builtin
+    - knowledge_id: platform_github#github_credentials_surface
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\platform_github.yaml
+      title: github_credentials_surface
+      short_description: GitHub 凭证管理：Actions/Codespaces/Dependabot secrets 与 deploy keys
+      tags:
+        - platform
+        - goal_contains
+      domain: github
+      trust_level: builtin
+    - knowledge_id: platform_github#github_packages_notifications
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\platform_github.yaml
+      title: github_packages_notifications
+      short_description: GitHub Packages 版本管理与通知订阅（watch/thread/inbox）
+      tags:
+        - platform
+        - goal_contains
+      domain: github
+      trust_level: builtin
+    - knowledge_id: recovery#recovery_triage
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\recovery.yaml
+      title: recovery_triage
+      short_description: 恢复问题分诊决策树：未提交/已提交/已推送的不同恢复策略
+      tags:
+        - always
+      domain: git
+      trust_level: builtin
+    - knowledge_id: recovery#undo_working_changes
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\recovery.yaml
+      title: undo_working_changes
+      short_description: 撤销工作区改动：git restore 单个/多个/全部文件
+      tags:
+        - working_count_gt
+      domain: git
+      trust_level: builtin
+    - knowledge_id: recovery#undo_staged_changes
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\recovery.yaml
+      title: undo_staged_changes
+      short_description: 撤销暂存区改动：git restore --staged 取消已 add 但未 commit 的内容
+      tags:
+        - staged_count_gt
+      domain: git
+      trust_level: builtin
+    - knowledge_id: recovery#reflog_rescue
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\recovery.yaml
+      title: reflog_rescue
+      short_description: Reflog 救援三步：查看 reflog → 找目标 hash → 建救援分支
+      tags:
+        - always
+      domain: git
+      trust_level: builtin
+    - knowledge_id: sync#safe_sync_sop
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\sync.yaml
+      title: safe_sync_sop
+      short_description: 安全同步序列：fetch → 判断 ahead/behind → merge/rebase → push
+      tags:
+        - has_upstream
+      domain: git
+      trust_level: builtin
+    - knowledge_id: sync#diverged_integration
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\sync.yaml
+      title: diverged_integration
+      short_description: 分支分叉（ahead+behind 同时 >0）时的 merge/rebase 整合策略
+      tags:
+        - ahead_gt
+        - behind_gt
+      domain: git
+      trust_level: builtin
+    - knowledge_id: sync#first_push
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\sync.yaml
+      title: first_push
+      short_description: 首次推送流程：确认远程 URL → git push -u origin HEAD → 建立追踪
+      tags:
+        - has_upstream
+        - has_remote
+        - commit_count_gt
+      domain: git
+      trust_level: builtin
+    - knowledge_id: sync#upstream_behind
+      path: C:\temp\test-gitmanual\.gitdex\maintain\knowledge\sync.yaml
+      title: upstream_behind
+      short_description: 仅落后上游时的快进合并流程（ff-only 或先 stash 再 ff）
+      tags:
+        - behind_gt
+        - ahead
+      domain: git
+      trust_level: builtin

@@ -1,0 +1,6 @@
+documentation:
+  - '*.md'
+bug:
+  - '**/*.py'
+enhancement:
+  - '**/*.js'

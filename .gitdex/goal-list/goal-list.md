@@ -1,0 +1,49 @@
+# Goal-List
+
+- [x] 请你创建一个新分支feature/html-test，然后创建一个网页文件，然后和master进行Pull request进行分支合并
+- [ ] Create a README.md that explains the purpose of the project, setup steps, usage, and how to contribute. Add a LICENSE file (MIT) and update .gitignore if needed for common patterns. Create a .github/ISSUE_TEMPLATE folder with bug_report.md and feature_request.md templates. Add a .github/CONTRIBUTING.md detailing coding standards, pull request workflow, and testing expectations. Create a .github/SECURITY.md to provide vulnerability reporting instructions. Create a .github/CODEOWNERS file to assign ownership for README.md, index.html, and any future key files. Add a .github/workflows/ci.yml that runs linting (e.g., ESLint if applicable) and a placeholder test step, and triggers on push and pull_request. Add a .github/workflows/pages.yml to publish the existing index.html to GitHub Pages on each push to master. Enable branch protection on the master branch: require status checks from the CI workflow and at least one approving review before merge. Create an initial Git tag v0.1.0 and publish a GitHub Release with a generated changelog. Add a .editorconfig file to standardize code style across editors. Set up issue labels: bug, enhancement, documentation, question, help wanted, good first issue. Create a .github/labeler.yml to automatically apply labels based on file paths or PR titles. Enable Dependabot for any future dependencies by adding a dependabot.yml configuration. Add a .github/workflows/release_notes.yml to automatically generate release notes from commit messages on new tags.
+  - [ ] Create core documentation files: README.md, MIT LICENSE, and .editorconfig in the repository root
+  - [ ] Add GitHub project templates: create .github/ISSUE_TEMPLATE/bug_report.md and feature_request.md, .github/CONTRIBUTING.md, .github/SECURITY.md, and .github/CODEOWNERS assigning ownership for README.md, index.html, and future key files
+  - [ ] Set up GitHub Actions workflows: create .github/workflows/ci.yml (linting and placeholder test), .github/workflows/pages.yml (publish index.html on master), and .github/workflows/release_notes.yml (auto-generate release notes on new tags)
+  - [ ] Update .gitignore to include common patterns such as .DS_Store, node_modules, and other editor/OS generated files
+  - [ ] Create and push a git tag v0.1.0 to the remote repository
+  - [ ] Create a GitHub Release v0.1.0 with a generated changelog based on commit messages using the GitHub API
+  - [ ] Create issue labels (bug, enhancement, documentation, question, help wanted, good first issue) via the GitHub API and add .github/labeler.yml to auto-apply labels based on file paths or PR titles
+  - [ ] Add dependabot.yml to enable Dependabot for future dependency updates
+  - [ ] Configure branch protection on the master branch via the GitHub API: require status checks from the CI workflow and at least one approving review before merge
+- [ ] Create a .gitattributes file that sets eol=lf and marks all files as text to enforce consistent line endings across all environments.
+  - [ ] Create a new file named .gitattributes at the repository root
+  - [ ] Add the line '* text eol=lf' to the .gitattributes file to mark all files as text with LF line endings
+  - [ ] Stage the .gitattributes file using 'git add .gitattributes'
+  - [ ] Commit the change with a descriptive message, e.g., 'Add .gitattributes to enforce consistent LF line endings'
+  - [ ] (Optional) Push the commit to the remote repository if you want the settings to be shared immediately
+- [ ] Add a commit-msg Git hook that rejects commit messages not following Conventional Commits (e.g., must start with type: feat, fix, docs, style, refactor, test, chore) and provides a helpful error message.
+- [ ] Add a pre-commit hook that checks for trailing whitespace and ensures a maximum line length of 80 characters; commit if the hook fails.
+- [ ] Create a simple Node.js project: add package.json with a hello.js script, include a basic jest test suite, and set up a test script that runs jest.
+- [ ] Add a GitHub Actions workflow `security.yml` that runs CodeQL analysis on every pull request to detect potential vulnerabilities.
+- [ ] Create a GitHub Actions workflow `pre-commit.yml` that runs the pre-commit hooks automatically on push and pull_request events, ensuring code style checks before CI continues.
+- [ ] Add a GitHub Actions workflow `deploy-docs.yml` that builds a MkDocs site from a new `docs/` folder and deploys it to GitHub Pages on every push to master.
+- [ ] Add a GitHub Actions workflow `release-automated.yml` that automatically generates a release tag (vX.Y.Z) and changelog based on Conventional Commits when the branch contains at least one commit since the last tag.
+- [ ] Implement a small Git hook that enforces a maximum commit size or number of lines changed, which can help keep the commit history clean and focused.
+- [ ] Create CODE_OF_CONDUCT.md using the Contributor Covenant v2.1 template
+  - [ ] Create CODE_OF_CONDUCT.md with the Contributor Covenant v2.1 template content
+  - [ ] Stage CODE_OF_CONDUCT.md
+  - [ ] Commit the new file with a message such as 'docs: add Contributor Covenant code of conduct'
+- [ ] Create a .github/ISSUE_TEMPLATE/feedback.md template with fields for Feedback Type, Description, and Environment
+- [ ] Create a .github/workflows/markdown_lint.yml that runs markdownlint on all Markdown files and fails if linting errors are found
+- [ ] Create a .markdownlint.yml config file setting standard rules (e.g., no trailing spaces, max line length 100, no hard tabs)
+- [ ] Create a Dockerfile that uses nginx to serve the existing index.html at /usr/share/nginx/html
+- [ ] Create a GitHub Projects v2 board named "Project Board" with columns "Backlog", "In Progress", and "Done" via the GitHub API
+- [ ] Create .github/settings.yml (or use the API) to enable Discussions for this repository
+- [ ] Create .github/ISSUE_TEMPLATE/config.yml that references the new bug_report.md, feature_request.md, and feedback.md templates
+- [ ] Add a CONTRIBUTING.md section that references the new CODE_OF_CONDUCT.md and links to the Discussions page
+- [ ] Create a .github/workflows/docker-build.yml that builds the Docker image and pushes it to ghcr.io on every push to master
+  - [ ] Create the .github directory if it does not already exist.
+  - [ ] Create the .github/workflows directory if it does not already exist.
+  - [ ] Create a new file named .github/workflows/docker-build.yml with the following GitHub Actions workflow: 
+- Trigger on push to master.
+- Checkout the repository.
+- Log in to ghcr.io using the GITHUB_TOKEN secret.
+- Build the Docker image, tagging it with ghcr.io/<owner>/<repo>:${{ github.sha }}.
+- Push the image to ghcr.io.
+- Optionally, cache Docker layers for faster subsequent builds.
