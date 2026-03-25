@@ -1,4 +1,4 @@
-# Test Git Tool
+﻿# Test Git Tool
 
 A lightweight utility for demonstrating Git operations and CI/CD workflows.
 
@@ -12,11 +12,13 @@ cd test-git-tool
 
 ## Usage
 
-The repository is a static site; just open `index.html` in a browser or view the GitHub Pages site.
+The repository is a static site; just open `index.html` in a browser
+or view the GitHub Pages site.
 
 ## Contributing
 
-Please read the [CONTRIBUTING](CONTRIBUTING.md) guide for coding standards, pull request workflow, and testing expectations.
+Please read the [CONTRIBUTING](CONTRIBUTING.md) guide for coding standards,
+pull request workflow, and testing expectations.
 
 ## License
 
