@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/Joker-of-Gotham/test-git-tool#readme",
   "devDependencies": {
-    "eslint": "^8.57.0"
+    "eslint": "~8.57.0"
   }
 }

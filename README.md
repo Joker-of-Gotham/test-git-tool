@@ -1,4 +1,4 @@
-﻿# Test Git Tool
+# Test Git Tool
 
 A lightweight utility for demonstrating Git operations and CI/CD workflows.
 
@@ -23,3 +23,4 @@ pull request workflow, and testing expectations.
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
