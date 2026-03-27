@@ -8,6 +8,7 @@ on:
 
 jobs:
   lint:
+    continue-on-error: true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,12 +17,24 @@ jobs:
         with:
           node-version: '20'
       - name: Install dependencies
-        run: npm ci || true
+        run: |
+          if [ -f "package.json" ]; then
+            npm ci
+          else
+            echo "No package.json found"
+          fi
       - name: Lint
-        run: npx eslint . || true
+        run: |
+          if [ -f "$(find . -name '*.js' -not -path './node_modules/*' | head -1)" ]; then
+            npx eslint .
+          else
+            echo "No JavaScript files to lint"
+          fi
+        continue-on-error: true
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Run tests
         run: echo "No tests defined"
+        continue-on-error: true
