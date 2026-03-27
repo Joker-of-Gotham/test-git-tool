@@ -21,6 +21,5 @@ Please read the [CONTRIBUTING](CONTRIBUTING.md) guide for coding standards,
 pull request workflow, and testing expectations.
 
 ## License
-
 This project is licensed under the [MIT License](LICENSE).
 
